@@ -13,5 +13,6 @@ namespace Model
         public double Price { get; set; }
         public int Supply { get; set; }
         public List<Copy> Copies { get; set; }
+        public int ProductNo { get; set; }
     }
 }
