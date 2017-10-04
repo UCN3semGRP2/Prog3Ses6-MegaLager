@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Copy
+    public class Copy
     {
         public int SerialNo { get; set; }
     }
