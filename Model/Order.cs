@@ -11,6 +11,7 @@ namespace Model
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
         public State State { get; set; }
+        public IEnumerable<OrderLine> OrderLines { get; set; }
 
     }
 }
