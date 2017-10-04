@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaLager", "MegaLager\MegaLager.csproj", "{C3C08731-D7D9-4C55-89CD-1702ECB86D84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{14DDA816-92D0-4DD2-BB18-9A73C8E0DA86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{FE8209BF-0748-4075-B5C0-E673F6B60861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{14DDA816-92D0-4DD2-BB18-9A73C8E0DA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14DDA816-92D0-4DD2-BB18-9A73C8E0DA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14DDA816-92D0-4DD2-BB18-9A73C8E0DA86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8209BF-0748-4075-B5C0-E673F6B60861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8209BF-0748-4075-B5C0-E673F6B60861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8209BF-0748-4075-B5C0-E673F6B60861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8209BF-0748-4075-B5C0-E673F6B60861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
