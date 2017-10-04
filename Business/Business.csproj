@@ -41,11 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IOrderCtrl.cs" />
+    <Compile Include="IProductCtrl.cs" />
+    <Compile Include="ICustomerCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{fe8209bf-0748-4075-b5c0-e673f6b60861}</Project>
+      <Project>{FE8209BF-0748-4075-B5C0-E673F6B60861}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

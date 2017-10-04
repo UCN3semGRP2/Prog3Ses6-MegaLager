@@ -10,9 +10,10 @@ namespace Business
     interface IProductCtrl
     {
         Product Create(string name, double price, int supply);
-        IEnumerable<Product> findByName(string name);
-        IEnumerable<Product> findByProductNo(int productNo);
-        IEnumerable<Product> findSoldOutProducts();
+        IEnumerable<Product> FindByName(string name);
+        IEnumerable<Product> FindByProductNo(int productNo);
+        IEnumerable<Product> FindSoldOutProducts();
         void UpdateSupply(Product p, int newSupply);
+        Product FindMostSoldProuct(DateTime start, DateTime end);
     }
 }
