@@ -14,5 +14,6 @@ namespace Business
         IEnumerable<Product> FindByProductNo(int productNo);
         IEnumerable<Product> FindSoldOutProducts();
         void UpdateSupply(Product p, int newSupply);
+        Product FindMostSoldProuct(DateTime start, DateTime end);
     }
 }
