@@ -9,10 +9,10 @@ namespace Model
     public abstract class Customer
     {
         public int Id { get; set; }
-        public int Phone { get; set; }
-        public int CustomerNo { get; set; }
-        public int Zip { get; set; }
-        public int AccountNo { get; set; }
+        public String Phone { get; set; }
+        public String CustomerNo { get; set; }
+        public String Zip { get; set; }
+        public String AccountNo { get; set; }
         public String Name { get; set; }
         public String Address { get; set; }
     }

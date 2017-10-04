@@ -8,7 +8,7 @@ namespace Model
 {
     class Commercial : Customer
     {
-        public int Cvr { get; set; }
-        public int Ean { get; set; }
+        public String Cvr { get; set; }
+        public String Ean { get; set; }
     }
 }
