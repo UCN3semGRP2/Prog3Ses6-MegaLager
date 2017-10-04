@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="db.cs" />
     <Compile Include="ICRUD.cs" />
+    <Compile Include="ICustomerDB.cs" />
     <Compile Include="IOrderDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
