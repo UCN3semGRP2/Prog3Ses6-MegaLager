@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,7 +12,19 @@ namespace WcfService
     [ServiceContract]
     public interface IService1
     {
+
         [OperationContract]
-        string GetData(int value);
+        void CreateItem();
+        [OperationContract]
+        void UpdateStock(Product p, int newSupply);
+        [OperationContract]
+        void UpdatePrice(Product p, double price);
+        [OperationContract]
+        IEnumerable<Product> GetAllSoldoutProducts();
+
+        [OperationContract]
+        IEnumerable<Product> FindProductByName(string name);
+        [OperationContract]
+        IEnumerable<Product> FindProductByProductNo(int productNo);
     }
 }
