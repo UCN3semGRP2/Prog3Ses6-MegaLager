@@ -10,7 +10,8 @@ namespace Business
     class SalesCtrl : ISalesCtrl
  
     {
-        private CustomerCtrl cctrl;
+        private CustomerCtrl cCtrl;
+        private OrderCtrl oCtrl; 
         public void AddCustomer(Customer customer)
         {
             throw new NotImplementedException();
@@ -23,18 +24,18 @@ namespace Business
 
         public Customer CreateComCustomer(string name, string phone, string address, string zip, string accountNo, string cvr, string ean)
         {
-            Customer c = cctrl.CreateComCustomer(name, phone, address, zip, accountNo, cvr, ean);
+            Customer c = cCtrl.CreateComCustomer(name, phone, address, zip, accountNo, cvr, ean);
             return c; 
         }
 
         public void CreateOrder(State state)
         {
-            OrderCtrl.CreateOrder(state);
+            oCtrl.CreateOrder(state);
         }
 
         public Customer CreatePrivateCustomer(string name, string phone, string address, string zip, string accountNo)
         {
-            Customer c = cctrl.CreatePrivateCustomer(name, phone, address, zip, accountNo);
+            Customer c = cCtrl.CreatePrivateCustomer(name, phone, address, zip, accountNo);
             return c; 
         }
 
