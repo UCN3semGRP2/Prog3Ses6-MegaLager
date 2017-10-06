@@ -13,5 +13,7 @@ namespace Business
         OrderLine FindOrderLineById(int id);
         void DeleteOrderLine(OrderLine orderLine);
         
+        double GetSubTotal(IEnumerable<OrderLine> orderLines);
+        
     }
 }

@@ -17,9 +17,11 @@ namespace Business
         {
             
         }
-        public void AddOrderLine(OrderLine orderLine, int id)
+        public void AddOrderLine(OrderLine orderLine, Order o)
         {
-            IOrderLineCtrl.add(orderLine, id);
+            o.OrderLines.Add(orderLine);
+            //var id = o.Id;
+            //orderLineCtrl.add(orderLine, id);
         }
 
         public Order CreateOrder(State state)
@@ -45,17 +47,19 @@ namespace Business
             return OrderDB.FindByID(id);
         }
 
-        public void PrintTotalSales(DateTime start, DateTime end)
+        public double TotalSalesPriceInPeriod(DateTime start, DateTime end)
         {
             List<Order> orList = (List<Order>)OrderDB.FindAll();
-            int totalPrice = 0;
+            double totalPrice = 0;
             foreach (var Order in orList)
             {
                 if(start <= Order.OrderDate && Order.OrderDate <= end )
                 {
-                    totalPrice += IOrderLineCtrl.getPrice();
+                   
+                    totalPrice += orderLineCtrl.GetSubTotal(Order.OrderLines);
                 }
             }
+            return totalPrice;
         }
     }
 }
