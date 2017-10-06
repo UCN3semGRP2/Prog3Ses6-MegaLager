@@ -45,6 +45,7 @@
     <Compile Include="IOrderLineCtrl.cs" />
     <Compile Include="IProductCtrl.cs" />
     <Compile Include="ICustomerCtrl.cs" />
+    <Compile Include="ISalesCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
