@@ -9,7 +9,7 @@ namespace Business
 {
     interface IOrderCtrl
     {
-        Order CreateOrder();
+        Order CreateOrder(State state);
         Order FindOrderById(int id);
         void DeleteOrder(int id);
         // Order UpdateOrder(Order order);
