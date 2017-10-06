@@ -13,7 +13,7 @@ namespace Business
         Order FindOrderById(int id);
         void DeleteOrder(int id);
         // Order UpdateOrder(Order order);
-        void AddOrderLine(OrderLine orderLine);
+        void AddOrderLine(OrderLine orderLine, int id);
         void PrintTotalSales(DateTime start, DateTime end);
 
     }

@@ -8,17 +8,18 @@ using DataAccess;
 
 namespace Business
 {
-    class OrderCtrl : IOrderCtrl
+    public class OrderCtrl : IOrderCtrl
     {
         private IOrderDB OrderDB;
+        private IOrderLineCtrl orderLineCtrl;
         
         public OrderCtrl()
         {
             
         }
-        public void AddOrderLine(OrderLine orderLine)
+        public void AddOrderLine(OrderLine orderLine, int id)
         {
-            
+            IOrderLineCtrl.add(orderLine, id);
         }
 
         public Order CreateOrder(State state)
@@ -26,25 +27,35 @@ namespace Business
             DateTime d = new DateTime();
             d = DateTime.Now;
 
+            
             Order o = new Order();
             o.State = state;
             o.OrderDate = d;
-            return o;
+            return OrderDB.Create(o);
         }
 
         public void DeleteOrder(int id)
         {
-            throw new NotImplementedException();
+            Order or = FindOrderById(id);
+            OrderDB.Delete(or);
         }
 
         public Order FindOrderById(int id)
         {
-            throw new NotImplementedException();
+            return OrderDB.FindByID(id);
         }
 
         public void PrintTotalSales(DateTime start, DateTime end)
         {
-            throw new NotImplementedException();
+            List<Order> orList = (List<Order>)OrderDB.FindAll();
+            int totalPrice = 0;
+            foreach (var Order in orList)
+            {
+                if(start <= Order.OrderDate && Order.OrderDate <= end )
+                {
+                    totalPrice += IOrderLineCtrl.getPrice();
+                }
+            }
         }
     }
 }
