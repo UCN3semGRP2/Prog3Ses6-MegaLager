@@ -9,9 +9,10 @@ namespace Business
 {
     interface ISalesCtrl
     {
-        void CreateCustomer(String name, String phone, String customerNo, String address, String zip, String accountNo);
+        Customer CreatePrivateCustomer(String name, String phone, String address, String zip, String accountNo);
+        Customer CreateComCustomer(String name, String phone, String address, String zip, String accountNo, String cvr, String ean);
         void AddCustomer(Customer customer);
-        void CreateOrder();
+        void CreateOrder(State state);
         void UpdateOrder();
         void AddOrderLine();
 

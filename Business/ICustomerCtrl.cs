@@ -9,7 +9,8 @@ namespace Business
 {
     public interface ICustomerCtrl
     {
-        Customer CreateCustomer(String name, String phone, String customerNo, String address, String zip, String accountNo);
+        Customer CreatePrivateCustomer(String name, String phone, String address, String zip, String accountNo);
+        Customer CreateComCustomer(String name, String phone, String address, String zip, String accountNo, String cvr, String ean);
         Customer FindCustomer(String customerNo);
         void UpdateCustomer(Customer customer);
         void DeleteCustomer(Customer customer);
