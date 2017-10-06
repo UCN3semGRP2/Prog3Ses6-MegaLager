@@ -47,10 +47,15 @@
     <Compile Include="IProductCtrl.cs" />
     <Compile Include="ICustomerCtrl.cs" />
     <Compile Include="ISalesCtrl.cs" />
+    <Compile Include="OrderCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesCtrl.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{f9c0fb47-6acc-4ba6-8b8f-58782d3c7b51}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{fe8209bf-0748-4075-b5c0-e673f6b60861}</Project>
       <Project>{FE8209BF-0748-4075-B5C0-E673F6B60861}</Project>
