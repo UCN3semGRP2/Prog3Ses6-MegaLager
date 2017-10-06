@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IInventoryCtrl.cs" />
     <Compile Include="IOrderCtrl.cs" />
     <Compile Include="IOrderLineCtrl.cs" />
     <Compile Include="IProductCtrl.cs" />
