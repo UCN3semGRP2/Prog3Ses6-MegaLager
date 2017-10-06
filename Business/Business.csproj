@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerCtrl.cs" />
     <Compile Include="IInventoryCtrl.cs" />
     <Compile Include="IOrderCtrl.cs" />
     <Compile Include="IOrderLineCtrl.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="ISalesCtrl.cs" />
     <Compile Include="OrderCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesCtrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
