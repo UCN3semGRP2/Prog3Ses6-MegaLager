@@ -5,12 +5,15 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using Model;
+using Business;
 
 namespace WcfService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class Service1 : IService1
     {
+        private IInventoryCtrl invCtrl;
+
         public void CreateItem()
         {
             throw new NotImplementedException();

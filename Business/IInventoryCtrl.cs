@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    interface IInventoryCtrl
+    public interface IInventoryCtrl
     {
         void CreateItem();
         void UpdateStock(Product p, int newSupply);
