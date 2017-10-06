@@ -14,6 +14,11 @@ namespace WcfService
     {
         private IInventoryCtrl invCtrl;
 
+        public Service1()
+        {
+
+        }
+
         public void CreateItem()
         {
             throw new NotImplementedException();
