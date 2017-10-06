@@ -26,27 +26,27 @@ namespace WcfService
 
         public IEnumerable<Product> FindProductByName(string name)
         {
-            throw new NotImplementedException();
+            return invCtrl.FindProductByName(name);
         }
 
         public IEnumerable<Product> FindProductByProductNo(int productNo)
         {
-            throw new NotImplementedException();
+            return invCtrl.FindProductByProductNo(productNo);
         }
 
         public IEnumerable<Product> GetAllSoldoutProducts()
         {
-            throw new NotImplementedException();
+            return invCtrl.GetAllSoldoutProducts();
         }
 
         public void UpdatePrice(Product p, double price)
         {
-            throw new NotImplementedException();
+            invCtrl.UpdatePrice(p, price);
         }
 
         public void UpdateStock(Product p, int newSupply)
         {
-            throw new NotImplementedException();
+            invCtrl.UpdateStock(p, newSupply);
         }
     }
 }
