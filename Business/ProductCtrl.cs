@@ -11,6 +11,10 @@ namespace Business
     public class ProductCtrl : IProductCtrl
     {
         private IProductDB productDB;
+        public ProductCtrl()
+        {
+            
+        }
         public Product Create(string name, double price, int supply, int productNumber)
         {
             throw new NotImplementedException();
