@@ -9,6 +9,9 @@ namespace DataAccess
 {
     public interface IProductDB : ICRUD<Product>
     {
-        //TODO
+       
+        
+
+        
     }
 }
