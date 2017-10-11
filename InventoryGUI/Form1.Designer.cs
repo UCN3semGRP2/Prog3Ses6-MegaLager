@@ -38,6 +38,10 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtSupply = new System.Windows.Forms.TextBox();
             this.txtProductNo = new System.Windows.Forms.TextBox();
+            this.btnProductNoSearch = new System.Windows.Forms.Button();
+            this.btnNameSearch = new System.Windows.Forms.Button();
+            this.btnCreating = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -120,11 +124,51 @@
             this.txtProductNo.Size = new System.Drawing.Size(100, 20);
             this.txtProductNo.TabIndex = 9;
             // 
+            // btnProductNoSearch
+            // 
+            this.btnProductNoSearch.Location = new System.Drawing.Point(243, 122);
+            this.btnProductNoSearch.Name = "btnProductNoSearch";
+            this.btnProductNoSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnProductNoSearch.TabIndex = 10;
+            this.btnProductNoSearch.Text = "search";
+            this.btnProductNoSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnNameSearch
+            // 
+            this.btnNameSearch.Location = new System.Drawing.Point(243, 37);
+            this.btnNameSearch.Name = "btnNameSearch";
+            this.btnNameSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnNameSearch.TabIndex = 11;
+            this.btnNameSearch.Text = "search";
+            this.btnNameSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnCreating
+            // 
+            this.btnCreating.Location = new System.Drawing.Point(27, 169);
+            this.btnCreating.Name = "btnCreating";
+            this.btnCreating.Size = new System.Drawing.Size(75, 23);
+            this.btnCreating.TabIndex = 12;
+            this.btnCreating.Text = "create";
+            this.btnCreating.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(127, 168);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 260);
+            this.ClientSize = new System.Drawing.Size(352, 243);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnCreating);
+            this.Controls.Add(this.btnNameSearch);
+            this.Controls.Add(this.btnProductNoSearch);
             this.Controls.Add(this.txtProductNo);
             this.Controls.Add(this.txtSupply);
             this.Controls.Add(this.txtPrice);
@@ -154,6 +198,10 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtSupply;
         private System.Windows.Forms.TextBox txtProductNo;
+        private System.Windows.Forms.Button btnProductNoSearch;
+        private System.Windows.Forms.Button btnNameSearch;
+        private System.Windows.Forms.Button btnCreating;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

@@ -12,6 +12,8 @@ namespace InventoryGUI
 {
     public partial class Form1 : Form
     {
+        private WcfServiceReference.IService1 srv = new WcfServiceReference.Service1Client();
+
         public Form1()
         {
             InitializeComponent();
