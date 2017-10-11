@@ -8,14 +8,27 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    class db
+    public class db
     {
+        private static db instance;
         private string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
         public SqlConnection SqlConnection()
         {
             var conn = new SqlConnection(this.connectionString);
             return conn;
+        }
+
+        public static db GetInstance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new db();
+                }
+                return instance;
+            }
         }
     }
 }

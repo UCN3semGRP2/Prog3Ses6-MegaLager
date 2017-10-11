@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F9C0FB47-6ACC-4BA6-8B8F-58782D3C7B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryGUI", "InventoryGUI\InventoryGUI.csproj", "{F4F1F5C7-812D-4F4C-A0B8-50359990AEF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryGUI", "InventoryGUI\InventoryGUI.csproj", "{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{F9C0FB47-6ACC-4BA6-8B8F-58782D3C7B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9C0FB47-6ACC-4BA6-8B8F-58782D3C7B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9C0FB47-6ACC-4BA6-8B8F-58782D3C7B51}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4F1F5C7-812D-4F4C-A0B8-50359990AEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4F1F5C7-812D-4F4C-A0B8-50359990AEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4F1F5C7-812D-4F4C-A0B8-50359990AEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4F1F5C7-812D-4F4C-A0B8-50359990AEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
