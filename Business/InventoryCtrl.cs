@@ -14,8 +14,6 @@ namespace Business
         public void CreateProduct(string name, double price, int supply, int productNumber)
         {
             productCtrl.Create(name, price, supply, productNumber); 
-            // TODO: product controller need to take more parameters
-
         }
 
         public IEnumerable<Product> FindProductByName(string name)
