@@ -4,11 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DataAccess;
 
 namespace Business
 {
     public class CustomerCtrl : ICustomerCtrl
     {
+        private CustomerDb CDB;
+
+        public CustomerCtrl()
+        {
+            CDB = CustomerDb.GetInstance; 
+        }
+
         public Customer CreateComCustomer(string name, string phone, string address, string zip, string accountNo, string cvr, string ean)
         {
             Commercial c = new Commercial();
@@ -27,7 +35,7 @@ namespace Business
 
         public Customer CreatePrivateCustomer(string name, string phone, string address, string zip, string accountNo)
         {
-            Private p = new Private();
+            Priv p = new Priv();
             p.Name = name;
             p.Phone = phone;
             p.CustomerNo = phone; 
@@ -41,17 +49,35 @@ namespace Business
 
         public void DeleteCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            CDB.Delete(customer);
+            
         }
 
         public Customer FindCustomer(string customerNo)
         {
-            throw new NotImplementedException();
+            return CDB.FindByCustomerNo(customerNo); 
         }
 
-        public void UpdateCustomer(Customer customer)
+        public void UpdatePrivateCustomer(Priv p, String name, String phone, String zip, String AccountNo, String address)
         {
-            throw new NotImplementedException();
+            Priv priv = p;
+            p.Name = name;
+            p.Phone = phone;
+            p.Zip = zip; 
+            p.AccountNo = AccountNo;
+            p.Address = address; 
+        }
+
+        public void UpdateComCustomer(Commercial c, String name, String phone, String zip, String AccountNo, String address, String cvr, String ean)
+        {
+            Commercial commercial = c;
+            c.Name = name;
+            c.Phone = phone;
+            c.Zip = zip;
+            c.AccountNo = AccountNo;
+            c.Address = address;
+            c.Cvr = cvr;
+            c.Ean = ean; 
         }
     }
 }
