@@ -9,7 +9,7 @@ namespace Business
 {
     public interface IInventoryCtrl
     {
-        void CreateProduct(string name, double price, int supply, List<Copy> copies, int productNumber);
+        void CreateProduct(string name, double price, int supply, int productNumber);
         void UpdateStock(Product p, int newSupply);
         void UpdatePrice(Product p, double price);
         IEnumerable<Product> GetAllSoldoutProducts();

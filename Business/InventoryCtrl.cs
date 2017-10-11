@@ -11,9 +11,9 @@ namespace Business
     {
         private IProductCtrl productCtrl;
         
-        public void CreateProduct(string name, double price, int supply, List<Copy> copies, int productNumber)
+        public void CreateProduct(string name, double price, int supply, int productNumber)
         {
-            productCtrl.Create(name, price, supply); 
+            productCtrl.Create(name, price, supply, productNumber); 
             // TODO: product controller need to take more parameters
 
         }
