@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CustomerCtrl.cs" />
     <Compile Include="IInventoryCtrl.cs" />
+    <Compile Include="InventoryCtrl.cs" />
     <Compile Include="IOrderCtrl.cs" />
     <Compile Include="IOrderLineCtrl.cs" />
     <Compile Include="IProductCtrl.cs" />
