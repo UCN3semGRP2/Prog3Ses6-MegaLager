@@ -18,5 +18,10 @@ namespace InventoryGUI
         {
             InitializeComponent();
         }
+
+        private void btnNameSearch_Click(object sender, EventArgs e)
+        {
+            var products = srv.FindProductByName(txtName.Text);
+        }
     }
 }

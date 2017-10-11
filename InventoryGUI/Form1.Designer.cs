@@ -141,6 +141,7 @@
             this.btnNameSearch.TabIndex = 11;
             this.btnNameSearch.Text = "search";
             this.btnNameSearch.UseVisualStyleBackColor = true;
+            this.btnNameSearch.Click += new System.EventHandler(this.btnNameSearch_Click);
             // 
             // btnCreating
             // 
