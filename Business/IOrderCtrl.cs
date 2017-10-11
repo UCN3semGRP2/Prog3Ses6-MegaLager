@@ -15,6 +15,6 @@ namespace Business
         // Order UpdateOrder(Order order);
         void AddOrderLine(OrderLine orderLine, Order order);
         double TotalSalesPriceInPeriod(DateTime start, DateTime end);
-
+        IEnumerable<Order> FindOrdersWithProduct(Product product);
     }
 }
