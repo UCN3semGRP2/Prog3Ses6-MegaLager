@@ -7,7 +7,7 @@ using Model;
 
 namespace DataAccess
 {
-    public interface IProductDB : ICRUD<Order>
+    public interface IProductDB : ICRUD<Product>
     {
         //TODO
     }
