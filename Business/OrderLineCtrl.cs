@@ -45,7 +45,7 @@ namespace Business
 
         public void updateReferences(OrderLine orderline, int orderId)
         {
-            throw new NotImplementedException();
+            orderLineDB.Update(orderline, orderId);
         }
     }
 }
