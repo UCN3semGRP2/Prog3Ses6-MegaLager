@@ -14,6 +14,6 @@ namespace Business
         void DeleteOrderLine(OrderLine orderLine);
         
         double GetSubTotal(IEnumerable<OrderLine> orderLines);
-        
+        void updateReferences(OrderLine orderline, int orderId);
     }
 }

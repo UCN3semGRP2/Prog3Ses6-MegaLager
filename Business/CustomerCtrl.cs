@@ -16,7 +16,6 @@ namespace Business
         {
             CDB = CustomerDb.GetInstance; 
         }
-
         public Customer CreateComCustomer(string name, string phone, string address, string zip, string accountNo, string cvr, string ean)
         {
             Commercial c = new Commercial();
@@ -30,7 +29,7 @@ namespace Business
             c.CustomerNo = cvr;
             c.Ean = ean;  
 
-            return c; 
+            return CDB.Create(c); 
         }
 
         public Customer CreatePrivateCustomer(string name, string phone, string address, string zip, string accountNo)
@@ -43,14 +42,15 @@ namespace Business
             p.Zip = zip;
             p.AccountNo = accountNo;
 
-            return p; 
+            return CDB.Create(p); 
             
         }
 
         public void DeleteCustomer(Customer customer)
         {
+
             CDB.Delete(customer);
-            
+
         }
 
         public Customer FindCustomer(string customerNo)
@@ -65,7 +65,9 @@ namespace Business
             p.Phone = phone;
             p.Zip = zip; 
             p.AccountNo = AccountNo;
-            p.Address = address; 
+            p.Address = address;
+
+            CDB.Update(p);
         }
 
         public void UpdateComCustomer(Commercial c, String name, String phone, String zip, String AccountNo, String address, String cvr, String ean)
@@ -78,6 +80,7 @@ namespace Business
             c.Address = address;
             c.Cvr = cvr;
             c.Ean = ean; 
+            CDB.Update(c);
         }
     }
 }
