@@ -70,7 +70,16 @@ namespace Business
 
         public IEnumerable<Product> FindSoldOutProducts()
         {
-            throw new NotImplementedException();
+            List<Product> soldOut = new List<Product>();
+            var all = productDB.FindAll();
+            foreach (var p in all)
+            {
+                if (p.Supply == 0)
+                {
+                    soldOut.Add(p);
+                }
+            }
+            return soldOut;
         }
 
         public void UpdatePrice(Product p, double price)
