@@ -75,7 +75,8 @@ namespace Business
 
         public void UpdatePrice(Product p, double price)
         {
-            throw new NotImplementedException();
+            p.Price = price;
+            productDB.Update(p);
         }
 
         public void UpdateSupply(Product p, int newSupply)
