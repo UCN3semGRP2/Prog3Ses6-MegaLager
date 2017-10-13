@@ -20,8 +20,7 @@ namespace Business
         public void AddOrderLine(OrderLine orderLine, Order o)
         {
             o.OrderLines.Add(orderLine);
-            //var id = o.Id;
-            //orderLineCtrl.add(orderLine, id);
+            orderLineCtrl.updateReferences(orderLine, o.Id);
         }
 
         public Order CreateOrder(State state)

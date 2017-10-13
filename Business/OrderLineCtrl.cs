@@ -42,5 +42,10 @@ namespace Business
             }
             return subtotal;
         }
+
+        public void updateReferences(OrderLine orderline, int orderId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
