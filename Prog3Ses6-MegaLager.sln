@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaLager", "MegaLager\MegaLager.csproj", "{C3C08731-D7D9-4C55-89CD-1702ECB86D84}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{F9C0FB47-6ACC-4BA6-8B8F-58782D3C7B51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryGUI", "InventoryGUI\InventoryGUI.csproj", "{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerGUI", "CustomerGUI\CustomerGUI.csproj", "{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

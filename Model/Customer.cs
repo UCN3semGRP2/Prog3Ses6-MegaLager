@@ -15,5 +15,12 @@ namespace Model
         public String AccountNo { get; set; }
         public String Name { get; set; }
         public String Address { get; set; }
+
+        public override string ToString()
+        {
+            string str = "ID: " + Id + ", Name: " + Name;
+            return str;
+        }
     }
+
 }
