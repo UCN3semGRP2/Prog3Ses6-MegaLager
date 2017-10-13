@@ -10,7 +10,7 @@ namespace Business
 {
     public class OrderLineCtrl : IOrderLineCtrl
     {
-        private ICRUD<OrderLine> orderLineDB;
+        private IOrderLineDB orderLineDB;
 
         public OrderLine CreateOrderLine(int amount, Product product)
         {
