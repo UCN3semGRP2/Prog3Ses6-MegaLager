@@ -4,29 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DataAccess;
 
 namespace Business
 {
     public class OrderLineCtrl : IOrderLineCtrl
     {
+        private ICRUD<OrderLine> orderLineDB;
+
         public OrderLine CreateOrderLine(int amount, Product product)
         {
-            throw new NotImplementedException();
+            OrderLine orderLine = new OrderLine
+            {
+                Product = product,
+                Amount = amount
+            };
+            
+            return orderLineDB.Create(orderLine);
         }
 
         public void DeleteOrderLine(OrderLine orderLine)
         {
-            throw new NotImplementedException();
+            orderLineDB.Delete(orderLine);
         }
 
         public OrderLine FindOrderLineById(int id)
         {
-            throw new NotImplementedException();
+            return orderLineDB.FindByID(id);
         }
 
         public double GetSubTotal(IEnumerable<OrderLine> orderLines)
         {
-            throw new NotImplementedException();
+            double subtotal = 0;
+            foreach (var ol in orderLines)
+            {
+                subtotal += ol.Amount * ol.Product.Price;
+            }
+            return subtotal;
         }
     }
 }
