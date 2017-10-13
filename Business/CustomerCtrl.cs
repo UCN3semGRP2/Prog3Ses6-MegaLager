@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DataAccess;
 
 namespace Business
 {
     public class CustomerCtrl : ICustomerCtrl
     {
+        private ICustomerDB customerDB;
         public Customer CreateComCustomer(string name, string phone, string address, string zip, string accountNo, string cvr, string ean)
         {
             Commercial c = new Commercial();
@@ -22,7 +24,7 @@ namespace Business
             c.CustomerNo = cvr;
             c.Ean = ean;  
 
-            return c; 
+            return customerDB.Create(c); 
         }
 
         public Customer CreatePrivateCustomer(string name, string phone, string address, string zip, string accountNo)
@@ -35,23 +37,24 @@ namespace Business
             p.Zip = zip;
             p.AccountNo = accountNo;
 
-            return p; 
+            return customerDB.Create(p); 
             
         }
 
         public void DeleteCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            customerDB.Delete(customer);
         }
 
         public Customer FindCustomer(string customerNo)
         {
-            throw new NotImplementedException();
+            var allCustomers = customerDB.FindAll().ToList();
+            return allCustomers.Find(x => x.CustomerNo == customerNo);
         }
 
         public void UpdateCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            customerDB.Update(customer);
         }
     }
 }
