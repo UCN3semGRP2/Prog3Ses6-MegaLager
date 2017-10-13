@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaLager", "MegaLager\MegaLager.csproj", "{C3C08731-D7D9-4C55-89CD-1702ECB86D84}"
 EndProject
@@ -16,6 +16,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryGUI", "InventoryGUI\InventoryGUI.csproj", "{EBDC58C9-361A-42B6-A0B1-4D2A96E6C572}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerGUI", "CustomerGUI\CustomerGUI.csproj", "{B19071EF-9D5C-4C42-AE12-35DEBA72B43F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{14DDA816-92D0-4DD2-BB18-9A73C8E0DA86} = {14DDA816-92D0-4DD2-BB18-9A73C8E0DA86}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

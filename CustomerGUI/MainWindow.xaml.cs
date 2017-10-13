@@ -22,11 +22,10 @@ namespace CustomerGUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        public CustomerCtrl cCtrl { get; set; }
+        private ServiceReference.ICustomerService srv = new ServiceReference.CustomerServiceClient();
         public MainWindow()
         {
             InitializeComponent();
-            cCtrl = new CustomerCtrl();
         }
 
         private void cb_Commercial_Checked(object sender, RoutedEventArgs e)
@@ -46,11 +45,11 @@ namespace CustomerGUI
             Customer customer = null;
             if (cb_Commercial.IsChecked == true)
             {
-                customer = cCtrl.CreateComCustomer(tb_Name.Text, tb_Phone.Text, tb_Address.Text, tb_Zip.Text, tb_AccNo.Text, tb_Cvr.Text, tb_Ean.Text);
+                customer = srv.CreateComCustomer(tb_Name.Text, tb_Phone.Text, tb_Address.Text, tb_Zip.Text, tb_AccNo.Text, tb_Cvr.Text, tb_Ean.Text);
             }
             else if (cb_Commercial.IsChecked == false)
             {
-                customer = cCtrl.CreatePrivateCustomer(tb_Name.Text, tb_Phone.Text, tb_Address.Text, tb_Zip.Text, tb_AccNo.Text);
+                customer = srv.CreatePrivCustomer(tb_Name.Text, tb_Phone.Text, tb_Address.Text, tb_Zip.Text, tb_AccNo.Text);
             }
             else
             {
@@ -62,8 +61,13 @@ namespace CustomerGUI
 
         private void btn_findByCustomerNo_Click(object sender, RoutedEventArgs e)
         {
-            Customer customer = cCtrl.FindCustomer(tb_findByCustomerNo.Text);
-            MessageBox.Show("Customer found: " + customer.ToString());
+
         }
+
+        //private void btn_findByCustomerNo_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Customer customer = cCtrl.FindCustomer(tb_findByCustomerNo.Text);
+        //    MessageBox.Show("Customer found: " + customer.ToString());
+        //}
     }
 }

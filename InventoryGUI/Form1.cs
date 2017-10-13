@@ -12,7 +12,7 @@ namespace InventoryGUI
 {
     public partial class Form1 : Form
     {
-        private WcfServiceReference.IService1 srv = new WcfServiceReference.Service1Client();
+        //private WcfServiceReference.IService1 srv = new WcfServiceReference.Service1Client();
 
         public Form1()
         {
@@ -21,7 +21,7 @@ namespace InventoryGUI
 
         private void btnNameSearch_Click(object sender, EventArgs e)
         {
-            var products = srv.FindProductByName(txtName.Text);
+            //var products = srv.FindProductByName(txtName.Text);
         }
     }
 }
