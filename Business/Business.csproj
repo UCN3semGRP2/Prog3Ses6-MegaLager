@@ -42,12 +42,14 @@
   <ItemGroup>
     <Compile Include="CustomerCtrl.cs" />
     <Compile Include="IInventoryCtrl.cs" />
+    <Compile Include="InventoryCtrl.cs" />
     <Compile Include="IOrderCtrl.cs" />
     <Compile Include="IOrderLineCtrl.cs" />
     <Compile Include="IProductCtrl.cs" />
     <Compile Include="ICustomerCtrl.cs" />
     <Compile Include="ISalesCtrl.cs" />
     <Compile Include="OrderCtrl.cs" />
+    <Compile Include="ProductCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesCtrl.cs" />
   </ItemGroup>

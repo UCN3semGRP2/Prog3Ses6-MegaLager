@@ -49,6 +49,7 @@
     <Compile Include="ICRUD.cs" />
     <Compile Include="ICustomerDB.cs" />
     <Compile Include="IOrderDB.cs" />
+    <Compile Include="IProductDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

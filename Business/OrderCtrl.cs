@@ -47,6 +47,11 @@ namespace Business
             return OrderDB.FindByID(id);
         }
 
+        public IEnumerable<Order> FindOrdersWithProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
         public double TotalSalesPriceInPeriod(DateTime start, DateTime end)
         {
             List<Order> orList = (List<Order>)OrderDB.FindAll();
