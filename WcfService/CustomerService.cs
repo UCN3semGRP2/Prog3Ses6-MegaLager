@@ -1,14 +1,16 @@
-﻿using System;
+﻿using Business;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
 using System.Text;
-using System.Threading.Tasks;
-using Model;
-using Business;
 
 namespace WcfService
 {
-    public class CusomterService : ICustomerService
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "CustomerService" in both code and config file together.
+    public class CustomerService : ICustomerService
     {
         private CustomerCtrl customerCtrl;
         public Customer CreateComCustomer(string name, string phone, string address, string zip, string accountNo, string cvr, string ean)
@@ -17,7 +19,7 @@ namespace WcfService
         }
         public Customer CreatePrivCustomer(String name, String phone, String address, String zip, String accountNo)
         {
-            return customerCtrl.CreatePrivateCustomer(name, phone, address, zip , accountNo);
+            return customerCtrl.CreatePrivateCustomer(name, phone, address, zip, accountNo);
         }
 
         public void DeleteCustomer(Customer customer)
