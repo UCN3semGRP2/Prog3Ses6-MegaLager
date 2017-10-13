@@ -81,7 +81,8 @@ namespace Business
 
         public void UpdateSupply(Product p, int newSupply)
         {
-            throw new NotImplementedException();
+            p.Supply = newSupply;
+            productDB.Update(p);
         }
     }
 }
