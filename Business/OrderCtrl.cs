@@ -48,12 +48,16 @@ namespace Business
 
         public IEnumerable<Order> FindOrdersWithProduct(Product product)
         {
-            throw new NotImplementedException();
+            // finds all orders where one of its orderlines contains a product id equal to product.id
+            var orders = OrderDB.FindAll().ToList().FindAll(
+                o => o.OrderLines.Find(ol => ol.Product.Id == product.Id) != null
+            );
+            return orders;
         }
 
         public double TotalSalesPriceInPeriod(DateTime start, DateTime end)
         {
-            List<Order> orList = (List<Order>)OrderDB.FindAll();
+            List<Order> orList = OrderDB.FindAll().ToList();
             double totalPrice = 0;
             foreach (var Order in orList)
             {
