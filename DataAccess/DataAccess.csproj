@@ -51,6 +51,7 @@
     <Compile Include="IOrderDB.cs" />
     <Compile Include="IOrderLineDB.cs" />
     <Compile Include="IProductDB.cs" />
+    <Compile Include="ProductDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
