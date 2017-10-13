@@ -49,6 +49,7 @@
     <Compile Include="ICustomerCtrl.cs" />
     <Compile Include="ISalesCtrl.cs" />
     <Compile Include="OrderCtrl.cs" />
+    <Compile Include="OrderLineCtrl.cs" />
     <Compile Include="ProductCtrl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesCtrl.cs" />
