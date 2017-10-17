@@ -12,7 +12,7 @@ namespace WcfService
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "CustomerService" in both code and config file together.
     public class CustomerService : ICustomerService
     {
-        private CustomerCtrl customerCtrl = new CustomerCtrl();
+        private ICustomerCtrl customerCtrl = new CustomerCtrl();
 
         public CustomerService()
         {
