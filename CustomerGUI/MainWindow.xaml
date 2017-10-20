@@ -1,0 +1,25 @@
+﻿<Window x:Class="CustomerGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomerGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120" Margin="10,31,0,0"/>
+        <TextBox x:Name="tb_Phone" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top" Width="120" Margin="10,59,0,0"/>
+        <TextBox x:Name="tb_Address" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="120" Margin="10,87,0,0"/>
+        <TextBox x:Name="tb_Zip" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Zip" VerticalAlignment="Top" Width="120" Margin="10,115,0,0"/>
+        <TextBox x:Name="tb_AccNo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Account Number" VerticalAlignment="Top" Width="120" Margin="10,143,0,0"/>
+        <CheckBox x:Name="cb_Commercial" Content="Commercial" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,171,0,0" Checked="cb_Commercial_Checked" Unchecked="cb_Commercial_Unchecked"/>
+        <TextBox x:Name="tb_Cvr" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="CVR" VerticalAlignment="Top" Width="120" Margin="10,191,0,0" IsEnabled="False"/>
+        <TextBox x:Name="tb_Ean" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="EAN" VerticalAlignment="Top" Width="120" Margin="10,219,0,0" IsEnabled="False"/>
+        <Button x:Name="btn_Create" Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,247,0,0" Click="btn_Create_Click"/>
+        <Label x:Name="lbl_Create" Content="Create:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,0"/>
+        <Label x:Name="lbl_Find" Content="Find Customer:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="149,5,0,0"/>
+        <TextBox x:Name="tb_findByCustomerNo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Customer Number" VerticalAlignment="Top" Width="120" Margin="149,31,0,0"/>
+        <Button x:Name="btn_findByCustomerNo" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="149,58,0,0" Click="btn_findByCustomerNo_Click"/>
+
+    </Grid>
+</Window>
